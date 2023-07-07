@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="input_text_main">25dp</dimen>
+    <dimen name="text_border">15dp</dimen>
+    <dimen name="margin_top_border">10dp</dimen>
+</resources>

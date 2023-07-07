@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_dark"
+    android:orientation="vertical"
+    android:padding="40dp"
+
+    android:weightSum="1"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbarThumbVertical="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/carrier_frequency_input"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_border"
+                    android:background="@drawable/inputborder"
+                    android:drawableRight="@drawable/unit_hz"
+                    android:drawablePadding="5dp"
+                    android:inputType="number"
+
+                    android:lines="1"
+                    android:padding="10dp"
+                    android:text="38000"
+                    android:textColor="@color/font_color_dark"
+                    android:textSize="@dimen/input_text_main" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+
+                    android:background="@color/cardview_dark_background"
+                    android:paddingLeft="5dp"
+
+                    android:paddingRight="5dp"
+                    android:text="Carrier Frequency"
+                    android:textColor="@color/font_color_dark"
+                    android:textSize="@dimen/text_border" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/pattern_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/margin_top_border"
+                    android:background="@drawable/inputborder"
+
+                    android:drawablePadding="10dp"
+
+                    android:hint="format:500,500(odd)"
+                    android:padding="10dp"
+                    android:singleLine="false"
+                    android:textColor="@color/font_color_dark"
+                    android:textColorHint="@color/hint_color_dark"
+                    android:textSize="@dimen/input_text_main" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+
+                    android:background="@color/cardview_dark_background"
+                    android:paddingLeft="5dp"
+
+                    android:paddingRight="5dp"
+                    android:text="Pattern"
+                    android:textColor="@color/font_color_dark"
+                    android:textSize="@dimen/text_border" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+                    android:layout_marginRight="10dp"
+                    android:paddingBottom="5dp"
+
+                    android:text="Reverse Voltage(todo)"
+                    android:textColor="@color/font_color_dark"
+                    android:textSize="20dp" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+
+                    android:thumb="@drawable/switch_thumb_selector"
+                    android:track="@drawable/switch_track_selector" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/send_but"
+
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+
+            android:src="@drawable/arrow_up"
+            android:background="@drawable/button_l" />
+    </LinearLayout>
+
+</LinearLayout>
